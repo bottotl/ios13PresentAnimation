@@ -34,6 +34,7 @@
     if (self = [super initWithPresentedViewController:presentedViewController presentingViewController:presentingViewController]) {
         
         presentedViewController.modalPresentationStyle = UIModalPresentationCustom;
+        presentedViewController.modalPresentationCapturesStatusBarAppearance = true;
         _dismissPanGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGestureRecognizerAction:)];
         _dismissPanGestureRecognizer.delegate = self;
         
@@ -219,7 +220,7 @@
 }
 
 - (id<UIViewControllerInteractiveTransitioning>)interactionControllerForDismissal:(id<UIViewControllerAnimatedTransitioning>)animator {
-    if (self.dismissPanGestureRecognizer) {
+    if (self.dismissPanGestureRecognizer.state != UIGestureRecognizerStatePossible) {
         return [[JFTSwipeTransitionInteractionController alloc] initWithGestureRecognizer:self.dismissPanGestureRecognizer];
     }
     

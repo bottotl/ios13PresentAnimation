@@ -9,6 +9,19 @@
 #import "ViewController.h"
 #import "JFTPresentationController.h"
 
+@interface ViewControllerB : UIViewController
+
+@end
+@implementation ViewControllerB
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+}
+- (BOOL)prefersStatusBarHidden {
+    return NO;
+}
+
+@end
+
 @interface ViewController ()
 
 @end
@@ -23,7 +36,7 @@
 }
 
 - (void)presentTestVC  {
-    UIViewController *vc = [UIViewController new];
+    UIViewController *vc = [ViewControllerB new];
     vc.view.backgroundColor = [UIColor redColor];
     vc.preferredContentSize = self.view.bounds.size;
     JFTPresentationController *presentationController NS_VALID_UNTIL_END_OF_SCOPE;
