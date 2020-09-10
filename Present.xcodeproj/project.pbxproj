@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3497DE9F2508BB5500EE0736 /* JFTSwipeTransitionInteractionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3497DE9E2508BB5500EE0736 /* JFTSwipeTransitionInteractionController.m */; };
+		3475A16F2509C1B800754F6C /* JFTCardPresentAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3475A16A2509C1B800754F6C /* JFTCardPresentAnimation.m */; };
+		3475A1702509C1B800754F6C /* JFTCardConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 3475A16B2509C1B800754F6C /* JFTCardConfiguration.m */; };
+		3475A1712509C1B800754F6C /* JFTCardTransitionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3475A16C2509C1B800754F6C /* JFTCardTransitionManager.m */; };
+		3475A1722509C1B800754F6C /* JFTSwipeTransitionInteractionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3475A16D2509C1B800754F6C /* JFTSwipeTransitionInteractionController.m */; };
+		3475A1732509C1B800754F6C /* JFTCardPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3475A16E2509C1B800754F6C /* JFTCardPresentationController.m */; };
+		3475A177250A0DEB00754F6C /* UIViewController+CardAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3475A176250A0DEB00754F6C /* UIViewController+CardAnimation.m */; };
 		34F8C57E2507935E005561D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F8C57D2507935E005561D2 /* AppDelegate.m */; };
 		34F8C5812507935E005561D2 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F8C5802507935E005561D2 /* SceneDelegate.m */; };
 		34F8C5842507935E005561D2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F8C5832507935E005561D2 /* ViewController.m */; };
@@ -15,13 +20,22 @@
 		34F8C58925079368005561D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34F8C58825079368005561D2 /* Assets.xcassets */; };
 		34F8C58C25079368005561D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34F8C58A25079368005561D2 /* LaunchScreen.storyboard */; };
 		34F8C58F25079368005561D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F8C58E25079368005561D2 /* main.m */; };
-		34F8C6BB250793B2005561D2 /* JFTPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F8C6BA250793B2005561D2 /* JFTPresentationController.m */; };
 		6D7CFEE4932F5AF6F7B99A0A /* Pods_Present.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5D1D0280DF8590D0B69096D /* Pods_Present.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3497DE9D2508BB5500EE0736 /* JFTSwipeTransitionInteractionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFTSwipeTransitionInteractionController.h; sourceTree = "<group>"; };
-		3497DE9E2508BB5500EE0736 /* JFTSwipeTransitionInteractionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFTSwipeTransitionInteractionController.m; sourceTree = "<group>"; };
+		3475A1652509C1B800754F6C /* JFTCardPresentAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFTCardPresentAnimation.h; sourceTree = "<group>"; };
+		3475A1662509C1B800754F6C /* JFTCardTransitionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFTCardTransitionManager.h; sourceTree = "<group>"; };
+		3475A1672509C1B800754F6C /* JFTCardConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFTCardConfiguration.h; sourceTree = "<group>"; };
+		3475A1682509C1B800754F6C /* JFTSwipeTransitionInteractionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFTSwipeTransitionInteractionController.h; sourceTree = "<group>"; };
+		3475A1692509C1B800754F6C /* JFTCardPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFTCardPresentationController.h; sourceTree = "<group>"; };
+		3475A16A2509C1B800754F6C /* JFTCardPresentAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFTCardPresentAnimation.m; sourceTree = "<group>"; };
+		3475A16B2509C1B800754F6C /* JFTCardConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFTCardConfiguration.m; sourceTree = "<group>"; };
+		3475A16C2509C1B800754F6C /* JFTCardTransitionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFTCardTransitionManager.m; sourceTree = "<group>"; };
+		3475A16D2509C1B800754F6C /* JFTSwipeTransitionInteractionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFTSwipeTransitionInteractionController.m; sourceTree = "<group>"; };
+		3475A16E2509C1B800754F6C /* JFTCardPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFTCardPresentationController.m; sourceTree = "<group>"; };
+		3475A175250A0DEB00754F6C /* UIViewController+CardAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CardAnimation.h"; sourceTree = "<group>"; };
+		3475A176250A0DEB00754F6C /* UIViewController+CardAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CardAnimation.m"; sourceTree = "<group>"; };
 		34F8C5792507935E005561D2 /* Present.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Present.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34F8C57C2507935E005561D2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		34F8C57D2507935E005561D2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -34,8 +48,6 @@
 		34F8C58B25079368005561D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34F8C58D25079368005561D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34F8C58E25079368005561D2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		34F8C6B9250793B2005561D2 /* JFTPresentationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFTPresentationController.h; sourceTree = "<group>"; };
-		34F8C6BA250793B2005561D2 /* JFTPresentationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFTPresentationController.m; sourceTree = "<group>"; };
 		86A9929790C7582870883C69 /* Pods-Present.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Present.debug.xcconfig"; path = "Target Support Files/Pods-Present/Pods-Present.debug.xcconfig"; sourceTree = "<group>"; };
 		93FA16A670976AF56634C69E /* Pods-Present.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Present.release.xcconfig"; path = "Target Support Files/Pods-Present/Pods-Present.release.xcconfig"; sourceTree = "<group>"; };
 		D5D1D0280DF8590D0B69096D /* Pods_Present.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Present.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +65,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3475A1642509C1B800754F6C /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				3475A1672509C1B800754F6C /* JFTCardConfiguration.h */,
+				3475A16B2509C1B800754F6C /* JFTCardConfiguration.m */,
+				3475A1652509C1B800754F6C /* JFTCardPresentAnimation.h */,
+				3475A16A2509C1B800754F6C /* JFTCardPresentAnimation.m */,
+				3475A1662509C1B800754F6C /* JFTCardTransitionManager.h */,
+				3475A16C2509C1B800754F6C /* JFTCardTransitionManager.m */,
+				3475A1692509C1B800754F6C /* JFTCardPresentationController.h */,
+				3475A16E2509C1B800754F6C /* JFTCardPresentationController.m */,
+				3475A1682509C1B800754F6C /* JFTSwipeTransitionInteractionController.h */,
+				3475A16D2509C1B800754F6C /* JFTSwipeTransitionInteractionController.m */,
+				3475A175250A0DEB00754F6C /* UIViewController+CardAnimation.h */,
+				3475A176250A0DEB00754F6C /* UIViewController+CardAnimation.m */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
 		34F8C5702507935E005561D2 = {
 			isa = PBXGroup;
 			children = (
@@ -85,10 +116,7 @@
 				34F8C58A25079368005561D2 /* LaunchScreen.storyboard */,
 				34F8C58D25079368005561D2 /* Info.plist */,
 				34F8C58E25079368005561D2 /* main.m */,
-				3497DE9D2508BB5500EE0736 /* JFTSwipeTransitionInteractionController.h */,
-				3497DE9E2508BB5500EE0736 /* JFTSwipeTransitionInteractionController.m */,
-				34F8C6B9250793B2005561D2 /* JFTPresentationController.h */,
-				34F8C6BA250793B2005561D2 /* JFTPresentationController.m */,
+				3475A1642509C1B800754F6C /* Card */,
 			);
 			path = Present;
 			sourceTree = "<group>";
@@ -224,12 +252,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3497DE9F2508BB5500EE0736 /* JFTSwipeTransitionInteractionController.m in Sources */,
+				3475A177250A0DEB00754F6C /* UIViewController+CardAnimation.m in Sources */,
+				3475A16F2509C1B800754F6C /* JFTCardPresentAnimation.m in Sources */,
+				3475A1712509C1B800754F6C /* JFTCardTransitionManager.m in Sources */,
 				34F8C5842507935E005561D2 /* ViewController.m in Sources */,
-				34F8C6BB250793B2005561D2 /* JFTPresentationController.m in Sources */,
+				3475A1732509C1B800754F6C /* JFTCardPresentationController.m in Sources */,
 				34F8C57E2507935E005561D2 /* AppDelegate.m in Sources */,
 				34F8C58F25079368005561D2 /* main.m in Sources */,
+				3475A1722509C1B800754F6C /* JFTSwipeTransitionInteractionController.m in Sources */,
 				34F8C5812507935E005561D2 /* SceneDelegate.m in Sources */,
+				3475A1702509C1B800754F6C /* JFTCardConfiguration.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

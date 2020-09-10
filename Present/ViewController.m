@@ -7,10 +7,13 @@
 //
 
 #import "ViewController.h"
-#import "JFTPresentationController.h"
+#import "JFTCardPresentationController.h"
+#import "JFTCardConfiguration.h"
+#import "JFTCardTransitionManager.h"
+#import "UIViewController+CardAnimation.h"
 
 @interface ViewControllerB : UIViewController
-
+@property (nonatomic) JFTCardTransitionManager *manager;
 @end
 @implementation ViewControllerB
 - (UIStatusBarStyle)preferredStatusBarStyle {
@@ -39,10 +42,7 @@
     UIViewController *vc = [ViewControllerB new];
     vc.view.backgroundColor = [UIColor redColor];
     vc.preferredContentSize = self.view.bounds.size;
-    JFTPresentationController *presentationController NS_VALID_UNTIL_END_OF_SCOPE;
-    presentationController = [[JFTPresentationController alloc] initWithPresentedViewController:vc presentingViewController:self];
-    vc.transitioningDelegate = presentationController;
-    [self presentViewController:vc animated:YES completion:nil];
+    [self card_present:vc];
 }
 
 - (IBAction)testPresent:(id)sender {

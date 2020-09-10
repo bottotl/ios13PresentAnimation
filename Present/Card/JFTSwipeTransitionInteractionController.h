@@ -1,3 +1,5 @@
+//  objc version for https://github.com/radianttap/CardPresentationController
+
 #import <UIKit/UIKit.h>
 
 @interface JFTSwipeTransitionInteractionController : UIPercentDrivenInteractiveTransition

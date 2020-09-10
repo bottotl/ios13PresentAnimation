@@ -1,3 +1,4 @@
+//  objc version for https://github.com/radianttap/CardPresentationController
 
 #import "JFTSwipeTransitionInteractionController.h"
 
